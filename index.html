@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openlayers web map</title>
+
+    <link rel="stylesheet" href="./libs/v6.14.1-dist/ol.css">
+    <link href="https://cdn.jsdelivr.net/npm/jspanel4@4.15.0/dist/jspanel.css" rel="stylesheet">
+    
+
+    <script src='./main.js'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ol3/3.5.0/ol.min.js" type="text/javascript"></script>
+    <script src='./libs/v6.14.1-dist/ol.js'></script>
+    <script src='./libs/v6.14.1-dist/ol.css'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+<!-- jsPanel JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/jspanel4@4.15.0/dist/jspanel.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspanel4@4.15.0/dist/extensions/modal/jspanel.modal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspanel4@4.15.0/dist/extensions/tooltip/jspanel.tooltip.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspanel4@4.15.0/dist/extensions/hint/jspanel.hint.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspanel4@4.15.0/dist/extensions/layout/jspanel.layout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspanel4@4.15.0/dist/extensions/dock/jspanel.dock.js"></script>
+<style>
+.button{
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background: #009578;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: #008168;
+}
+
+.button:active{
+    background: #006e58;
+}
+
+.button__text,
+.button__icon{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
+    height: 100%;
+}
+
+.button__icon{
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.updButton{
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background: #2196F3;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.updButton:hover{
+    background: #1E88E5;
+}
+
+.updButton:active{
+    background: #1976D2;
+}
+</style>
+</head>
+<body>
+       
+        <div id='js-map' class="menu">
+            <button type="button" class="button" id="newButton">
+                <span class="button__text">Add</span>
+                <span class="button__icon">
+                    <ion-icon name="add-outline"></ion-icon>
+                </span>
+
+            </button> 
+            <button type="button" class="updButton" id="updButton">
+                <span class="button__text">Update</span>
+                <span class="button__icon">
+                    <ion-icon name="navigate-circle-outline"></ion-icon>
+                </span>
+            </button>
+        </div>
+
+   
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
